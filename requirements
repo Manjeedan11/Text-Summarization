@@ -1,0 +1,4 @@
+transformers
+tensorflow==2.15
+flax
+torch

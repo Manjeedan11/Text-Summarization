@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarization</title>
+</head>
+<body>
+    <h1>Text Summarization</h1>
+    <form action="/summarize" method="post">
+        <textarea name="article" rows="10" cols="50" placeholder="Enter the article text here..."></textarea><br>
+        <input type="submit" value="Summarize">
+    </form>
+    {% if summary_text %}
+    <h2>Original Text</h2>
+    <p>{{ original_text }}</p>
+    <h2>Summary</h2>
+    <p>{{ summary_text }}</p>
+    {% endif %}
+</body>
+</html>
